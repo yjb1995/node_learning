@@ -80,7 +80,8 @@ const server = http.createServer((request, response) => {
     // filepath = path.join(root, pathname)
 })
 
-server.listen(8080)
+// server.listen(8080, '0.0.0.0')
+server.listen(8080, getIPv4())
 
 // 解析当前目录：
 // const workDir = path.resolve('.')
